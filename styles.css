@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body:not(#header){
+    background-color: #f5f5f7;
+}
+/* Header Styling */
+#header{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    background-color: cadetblue;
+    padding-right:10px;
+    top:0;
+    position:fixed;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand{
+    display:flex;
+}
+
+#header img{
+    width:auto;
+    height:40px;
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+#header h1{
+    margin: 0;
+    padding:0;
+
+}
+
+#nav-bar{
+    display:flex;
+    gap:20px;
+    position:fixed;
+    top: 0;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+
+#nav-bar a{
+    text-decoration: none;
+    font-size:large;
+    color: black;
+}
+
+/* Sign Up Styling */
+
+#form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:50px;
+    gap: 10px;
+}
+
+#form label{
+    margin:20px auto;
+    font-size:24px;
+    font-weight: bolder;
+}
+
+#form #email{
+    width:40%;
+    height:30px;
+    border-radius: 5px;
+    border-color: lightgray;
+    border-width: 1px;
+
+}
+
+#form #submit, button{
+    font-weight: bold;
+    color:white;
+    background-color: #3a7bff;
+    width:70px;
+    height:35px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color:#3a7bff;
+}
+
+/* Features Styling */
+#title-feature{
+    margin:10px 0;
+    text-align: center;
+}
+.description{
+    text-align: center;
+    font-size: 20px;
+}
+.colorful-gradient{
+    font-size: 18px;
+    background: linear-gradient(
+        90deg, 
+        #098ef7,
+        #7174fa,
+        #e84a85,
+        #f34946,
+        #f5540b);
+    background-position: center;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+    display: inline-block
+
+}
+.wrapper{
+    display:flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.phones{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+figure{
+    margin: 20px;
+}
+figure img{
+    display:block;
+    margin:auto;
+    width:50px;
+    height:auto;
+}
+figcaption{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.phones h2, .phones p{
+    margin:10px auto;
+    text-align: center;
+}
+/*
+.circles{
+    
+}
+.circle-16pro-1, .circle-16pro-2, .circle-16pro-3, .circle-16pro-4{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+}
+.circle-16-1, .circle-16-2, .circle-16-3, .circle-16-4, .circle-16-5{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+}
+*/
+.circles{
+    text-align: center;
+}
+.circles div{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+.circles div:hover{
+    transform: scale(2);
+}
+.circle-16pro-1{
+    background-color: #bfa48f;
+}
+.circle-16pro-2{
+    background-color: #c2bcb2;
+}
+.circle-16pro-3{
+    background-color: #f2f1ed;
+}
+.circle-16pro-4{
+    background-color: #3c3c3d;
+}
+.circle-16-1{
+    background-color: #9aadf6;
+}
+.circle-16-2{
+    background-color: #b0d4d2;
+}
+.circle-16-3{
+    background-color: #f2adda;
+}
+.circle-16-4{
+    background-color: #fafafa;
+}
+.circle-16-5{
+    background-color: #3c4042;
+}
+/* How it works Styling */
+iframe{
+    display: block;
+    margin: 30px auto;
+    width: 700px;
+    height:500px;
+}
+/* Pricing Styling */
+#pricing{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding:30px;
+}
+#pricing div{
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding:10px;
+}
+#pricing img{
+    display:block;
+    margin:auto;
+    width:50%;
+    height:auto;
+}
+#pricing p{
+    font-weight: bold;
+    font-size: large;
+}
+/* Footer Styling */
+footer{
+
+    display:flex;
+    width:80%;
+    padding: 30px;
+    margin:auto;
+}
+footer ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+ol a, ol li{
+    color: darkgrey;
+    font-size: small;
+}
+
+@media (max-width:768px){
+    .phones{
+        display:flex;
+        flex-direction: column;
+    }
+    iframe{
+        width:100%;
+    }
+    footer{
+        width:100%;
+        padding:30px 5px;
+    }
+}
